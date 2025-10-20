@@ -31,6 +31,7 @@ def fatorial_iterativo(n: int) -> int:
 # Implementação Recursiva
 # ---------------------------
 def fatorial_recursivo(n: int) -> int:
+            """Calcula o fatorial de n de forma recursiva"""
             if n == 0:
                 return 1
             if n > 0:
