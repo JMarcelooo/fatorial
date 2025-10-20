@@ -17,18 +17,28 @@ import functools
 # Implementação Iterativa
 # ---------------------------
 def fatorial_iterativo(n: int) -> int:
-    """Calcula o fatorial de n usando laço iterativo."""
-    # TODO: Implementar usando um laço for
-    pass
+    if n < 0:  
+        print("erro")
+    
+    resultado = 1
+    for i in range(1, n + 1 ):
+        resultado = resultado * i
+
+    return resultado
 
 
 # ---------------------------
 # Implementação Recursiva
 # ---------------------------
 def fatorial_recursivo(n: int) -> int:
-    """Calcula o fatorial de n de forma recursiva."""
-    # TODO: Implementar usando recursão com caso base (n==0 ou n==1)
-    pass
+            if n == 0:
+                return 1
+            if n > 0:
+                return n * fatorial_recursivo(n-1)
+            if n < 0:
+                print("erro")
+        
+    
 
 
 # ---------------------------
