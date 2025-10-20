@@ -49,6 +49,12 @@ def fatorial_recursivo(n: int) -> int:
 def fatorial_lru(n: int) -> int:
     """Calcula o fatorial de n com recursão + memoização (lru_cache)."""
     # TODO: Implementar igual ao recursivo, mas com o decorador @lru_cache
+    if n == 0:
+        return 1
+    if n > 0:
+        return n * fatorial_recursivo(n-1)
+    if n < 0:
+        print("erro")
     pass
 
 
